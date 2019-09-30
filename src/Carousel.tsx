@@ -655,8 +655,10 @@ class Carousel extends React.Component<CarouselProps, CarouselInternalState> {
           >
             {this.renderCarouselItems()}
           </ul>
-          {shouldShowArrows && !disableLeftArrow && this.renderLeftArrow()}
-          {shouldShowArrows && !disableRightArrow && this.renderRightArrow()}
+          {/* {shouldShowArrows && !disableLeftArrow && this.renderLeftArrow()}
+          {shouldShowArrows && !disableRightArrow && this.renderRightArrow()} */}
+          {shouldShowArrows && this.renderLeftArrow()}
+          {shouldShowArrows && this.renderRightArrow()}
           {shouldRenderAtAll && this.renderButtonGroups()}
           {shouldRenderAtAll && !renderDotsOutside && this.renderDotsList()}
         </div>
